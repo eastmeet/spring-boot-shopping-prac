@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "item")
 @Data
 @Builder
 @NoArgsConstructor
@@ -23,7 +22,7 @@ public class Item {
     @Column(nullable = false, length = 50)
     private String itemNm; // 상품명
 
-    @Column(name = "price", nullable = false)
+    @Column(nullable = false)
     private int price; // 가격
 
     @Column(nullable = false)
